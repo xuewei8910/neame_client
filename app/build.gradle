@@ -1,0 +1,29 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {
+        applicationId "com.xuewei8910.neame_client"
+        minSdkVersion 15
+        targetSdkVersion 20
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:support-v4:20.0.0'
+    compile 'com.squareup.retrofit:retrofit:1.7.0'
+    compile 'com.google.code.gson:gson:2.2.+'
+    compile 'com.google.guava:guava:17.0'
+    compile 'org.apache.httpcomponents:httpclient:4.3.4'
+}
