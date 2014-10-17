@@ -25,7 +25,8 @@ public class WebServiceTestCase extends TestCase {
             .build().create(WebServiceApi.class);
 
     private User testUser = new User("test");
-    private Event testEvent = new Event(testUser,"test",0,0);
+    //TODO
+    private Event testEvent = new Event();
 
     public void testAddEventList(){
         try {

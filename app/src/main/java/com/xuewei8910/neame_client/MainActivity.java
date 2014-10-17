@@ -18,6 +18,9 @@ import android.support.v4.widget.DrawerLayout;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import com.xuewei8910.neame_client.data.DataOpenHelper;
+import com.xuewei8910.neame_client.models.Event;
+
 
 public class MainActivity extends Activity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
